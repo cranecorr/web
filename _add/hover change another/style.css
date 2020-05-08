@@ -1,0 +1,23 @@
+.out {
+  display: inline;
+}
+
+.in {
+  float: left;
+  padding: 100px;
+}
+
+.out:hover
+.in{
+  background: #f00;
+}
+
+.out .in1:hover,
+.in1 {
+  background: #fc0;
+}
+
+.out .in2:hover,
+.in2 {
+  background: #0cf;
+}
