@@ -69,6 +69,9 @@
 }
 
 @media( max-width: 858px) {
+  .specialised {
+    padding: 25px 0 15px;
+  }
   .advantages-box__info {
     max-width: 100%;
   }
