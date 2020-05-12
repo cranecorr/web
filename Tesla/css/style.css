@@ -83,14 +83,12 @@ body {
 }
 
 .header-content__text {
-  width: 284px;
+  max-width: 284px;
   margin-bottom: 25px;
 }
 
 .header-content__btn, .footer-btn {
   display: inline-block;
-  /* height: 90px;
-  width: 290px; */
   padding: 30px 62px;
   border: 1px solid #fff;
   border-radius: 22px;
@@ -100,6 +98,75 @@ body {
 
 .header-content__btn:hover, .footer-btn:hover {
   background: #690103a2;
+}
+
+.menu {
+  background-color: #000000;
+  position: absolute;
+  /* top: 12px; */
+  left: -100%;
+  width: 100%;
+  transition: all .5s;
+  z-index: 7;
+}
+
+.menu.active {
+  left: 0;
+}
+
+.container-menu {
+  position: relative;
+}
+
+.close-btn {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 20px;
+  top: 43px;
+  cursor: pointer;
+}
+
+.close-btn::after, .close-btn::before {
+  content: '';
+  width: 70px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  transform-origin: left;
+}
+
+.close-btn::after {
+  transform: rotate(45deg);
+}
+
+.close-btn::before {
+  transform: rotate(-45deg);
+  bottom: -1px;
+}
+
+.menu__list {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.menu__list a {
+  min-width: 368px;
+  display: inline-block;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 48px;
+  line-height: 56px;
+  border-bottom: 3px solid #B70021;
+  padding: 30px 25px 14px 0;
+  transition: all .5s;
+}
+
+.menu__list a:hover {
+  border-bottom: 3px solid #fff;
+  color: #b70021;
+  transform: scale(1.2);
+  margin-left: 37px;
 }
 
 .slider__item {
@@ -175,7 +242,8 @@ body {
   margin: -55px auto 0;
   position: relative;
   z-index: 6;
-  max-width: 1200px;
+  max-width: 1230px;
+  padding: 0 15px;
 }
 
 /* ============================================== */
@@ -184,7 +252,7 @@ body {
   margin: 160px 0 100px;
 }
 
-.statistic-items {
+.statistics-items {
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -226,9 +294,7 @@ body {
   color: #B70021;
 }
 
-.statistics-img {
-  /* width: 1200px;
-  height: 400px; */
+.video {
   margin-bottom: 100px;
 }
 
@@ -311,11 +377,6 @@ body {
 }
 
 .footer-copy ul {
-  /* max-width: 906px;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between; */
   list-style: none;
 }
 
