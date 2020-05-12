@@ -55,8 +55,6 @@ body {
   margin-bottom: 29px;
 }
 
-.logo {}
-
 .header-btn {
   width: 60px;
   height: 60px;
@@ -311,8 +309,8 @@ body {
   text-align: center;
   font-weight: 700;
 }
+
 .footer-copy ul {
-  
   /* max-width: 906px;
   width: 100%;
   margin: 0 auto;
@@ -320,15 +318,15 @@ body {
   justify-content: space-between; */
   list-style: none;
 }
+
 .footer-copy li {
   position: relative;
   display: inline-block;
   padding: 0 10px;
 }
-.footer-copy li + li::before {
+
+.footer-copy li+li::before {
   content: "|";
   position: absolute;
   left: -5px;
 }
-
-
